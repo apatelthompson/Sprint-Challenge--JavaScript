@@ -95,7 +95,7 @@ for (let i=0; i < graduates.length; i++) {
 const uni = [];
 
 for (let i=0; i < graduates.length; i++) {
-  if (graduates[i].university == "uni") {
+  if (graduates[i].university.includes('Uni')) {
     uni.push(graduates[i]);
   }
 }
