@@ -6,11 +6,8 @@ forEach executes the function on each array element but it doesn’t create anyt
 They’re both functions, but a function is defined outside of an object while a method is defined a property of the object, which has a function definition.
 
 
-
 3. What is closure?
-Closure is created by adding a function inside another function.
-
-It’s where an inner function is able to have private variables but also access variables from outer functions.  It only works in one direction so a function can access variables from the outside but outside functions can’t access variables written inside an inner function.
+Closure is created by adding a function inside another function. It’s where an inner function is able to have private variables but also access variables from outer functions.  It only works in one direction so a function can access variables from the outside but outside functions can’t access variables written inside an inner function.
 
 The closure can access its own scope (variables in its brackets), it can access the outer function variables/parameters and it can access the global variables.
 

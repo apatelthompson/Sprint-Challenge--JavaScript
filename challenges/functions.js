@@ -24,31 +24,66 @@ const desk = ['Pen', 'Journal', 'Laptop', 'Phone', 'Paper', 'Water Bottle'];
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-  function consume(x, y, add) {
-    add(x+y);
+  let add = function(x,y) {
+    return x+y;
   }
 
+  function consume(x,y,add) {
+    add(x+y)
+  }
   consume(2,2,function(add) {
-    console.log(add);
-  }); // 4
+    console.log(add)
+  });
 
-
-  function consume(x, y, multiply) {
-    multiply(x * y);
+  let multiply = function (x,y) {
+    return x*y;
+  }
+  function consume(x,y,multiply) {
+    add(x*y)
   }
   consume(10,16,function(multiply) {
-    console.log(multiply);
-  }); // 160
+    console.log(multiply)
+  });
 
-
+  let greeting = function(first, last) {
+    return `Hello ${first} ${last}, nice to meet you!`
+  }
 
   function consume(first, last, greeting) {
-    greeting("nice to meet you!");
+    greeting("nice to meet you")
   }
-  consume("Mary","Poppins", function(greeting) {
-    console.log(`Hello ${first} ${last} ${greeting}`)
+  consume("Mary","Poppins",function(greeting) {
+    console.log(greeting)
+  });
 
-  }); // Hello Mary Poppins, nice to meet you!
+
+// consume(10,16,multiply); // 160
+// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+
+  // function consume(x, y, add) {
+  //   add(x+y);
+  // }
+  // consume(2,2,function(add) {
+  //   console.log(add);
+  // }); // 4
+  //
+  //
+  // function consume(x, y, multiply) {
+  //   multiply(x * y);
+  // }
+  // consume(10,16,function(multiply) {
+  //   console.log(multiply);
+  // }); // 160
+  //
+  //
+  //
+  // function consume(first, last, greeting) {
+  //   greeting("nice to meet you!");
+  // }
+  // consume("Mary","Poppins", function(greeting) {
+  //   console.log(`Hello ${first} ${last} ${greeting}`)
+
+  // }); // Hello Mary Poppins, nice to meet you!
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 
