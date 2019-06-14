@@ -1,0 +1,27 @@
+Describe the biggest difference between.forEach &. map.
+forEach executes the function on each array element but it doesn’t create anything new. .map creates a new array with the results of the function that ran on every array element.
+
+
+2. What is the difference between a function and a method?
+They’re both functions, but a function is defined outside of an object while a method is defined a property of the object, which has a function definition.
+
+
+
+3. What is closure?
+Closure is created by adding a function inside another function.
+
+It’s where an inner function is able to have private variables but also access variables from outer functions.  It only works in one direction so a function can access variables from the outside but outside functions can’t access variables written inside an inner function.
+
+The closure can access its own scope (variables in its brackets), it can access the outer function variables/parameters and it can access the global variables.
+
+
+4. Describe the four rules of the ‘this’ keyword.
+Overall, the value of "this" is different, depending on how a function is invoked. But we need to know the context in which the function is invoked.
+* 1. Window - the highest/ most general level; the this keyword always tries to point to the window which is why we have to know how to bind this key word more specifically. Can use "use strict" to make sure it doesnt bind to window.
+* 2. Implicit - the default binding, useful for objects and methods. it points to the object on which the function is called (what's left of the dot)
+* 3. New - this constructs a new object and then makes "this" point to it
+* 4. Explicit - useful for binding functions, way more control because you make explicit what value "this" points to, using call, apply or bind; bind is to use for later (permanently binds)
+
+
+5. Why do we need super() in an extended class?
+It is used to call the parent constructor. It needs to be used before the this keywords can be used in the child constructor. It’s used instead of  the clunky “Parent.call(this, childAttributes);”
