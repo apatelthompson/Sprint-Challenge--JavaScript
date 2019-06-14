@@ -1,6 +1,6 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
-class CuboidMaker {
+class CuboidMaker1 {
     constructor(attributes) {
       this.length = attributes.length;
       this.width = attributes.width;
@@ -16,7 +16,7 @@ class CuboidMaker {
   }
 }
 
-class CubeMaker extends CubeMaker {
+class CubeMaker1 extends CuboidMaker1 {
   constructor(childAttributes){
     super(childAttributes);
     this.side = childAttributes.side;
@@ -31,16 +31,15 @@ class CubeMaker extends CubeMaker {
     }
 }
 
-  const cuboid = new CuboidMaker({
+  const cuboid1 = new CuboidMaker1({
     length: 4,
     width: 5,
     height: 5,
   });
 
-  const cube = new CubeMaker({
+  const cube = new CubeMaker1({
     side:3,
   });
-
 
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:

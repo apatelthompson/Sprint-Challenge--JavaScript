@@ -24,20 +24,19 @@ const desk = ['Pen', 'Journal', 'Laptop', 'Phone', 'Paper', 'Water Bottle'];
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-  let add = function(x,y) {
-    return x+y;
-  }
-
+  // let add = function(x,y) {
+  //   return x+y;
+  // }
   function consume(x,y,add) {
-    add(x+y)
+    add(x+y);
   }
-  consume(2,2,function(add) {
-    console.log(add)
+  consume(2,2,function(total) {
+    console.log(total)
   });
 
-  let multiply = function (x,y) {
-    return x*y;
-  }
+  // let multiply = function (x,y) {
+  //   return x*y;
+  // }
   function consume(x,y,multiply) {
     add(x*y)
   }
@@ -45,9 +44,9 @@ const desk = ['Pen', 'Journal', 'Laptop', 'Phone', 'Paper', 'Water Bottle'];
     console.log(multiply)
   });
 
-  let greeting = function(first, last) {
-    return `Hello ${first} ${last}, nice to meet you!`
-  }
+  // let greeting = function(first, last) {
+  //   return `Hello ${first} ${last}, nice to meet you!`
+  // }
 
   function consume(first, last, greeting) {
     greeting("nice to meet you")
