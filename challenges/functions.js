@@ -27,20 +27,20 @@ const desk = ['Pen', 'Journal', 'Laptop', 'Phone', 'Paper', 'Water Bottle'];
   // let add = function(x,y) {
   //   return x+y;
   // }
-  function consume(x,y,add) {
+  function consume1(x,y,add) {
     add(x+y);
   }
-  consume(2,2,function(total) {
-    console.log(total)
+  consume1(2,2,function(total) {
+    console.log(total);
   });
 
   // let multiply = function (x,y) {
   //   return x*y;
   // }
-  function consume(x,y,multiply) {
-    add(x*y)
+  function consume2(x,y,multiply) {
+    multiply(x*y)
   }
-  consume(10,16,function(multiply) {
+  consume2(10,16,function(multiply) {
     console.log(multiply)
   });
 
@@ -48,10 +48,10 @@ const desk = ['Pen', 'Journal', 'Laptop', 'Phone', 'Paper', 'Water Bottle'];
   //   return `Hello ${first} ${last}, nice to meet you!`
   // }
 
-  function consume(first, last, greeting) {
-    greeting("nice to meet you")
+  function consume3(first, last, greeting) {
+    greeting(`Hello ${first} ${last}, nice to meet you`)
   }
-  consume("Mary","Poppins",function(greeting) {
+  consume3("Mary","Poppins",function(greeting) {
     console.log(greeting)
   });
 
